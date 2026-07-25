@@ -1,4 +1,4 @@
-// Projects Database
+// Projects Database with Verified Live Netlify & Streamlit URLs
 const projectsData = [
   {
     id: "gcp-pmle-quiz",
@@ -14,19 +14,6 @@ const projectsData = [
     details: "Includes full quiz engine, spaced retries for wrong answers, dashboard knowledge gap visualizer, and progress backup/restore capabilities via JSON."
   },
   {
-    id: "traffictwin",
-    title: "TrafficTwin Platform",
-    category: "research",
-    status: "Research Prototype",
-    badgeClass: "badge-research",
-    image: "assets/traffictwin_preview_1784975987284.jpg",
-    description: "Deterministic what-if experimentation and decision-support research platform for traffic and vehicular edge-computing (VEC) analysis.",
-    tech: ["Python 3.11+", "Streamlit", "SUMO 1.27.x", "TOST Equivalence", "Docker", "RO-Crate"],
-    githubUrl: "https://github.com/Abdulla4akash/traffictwin",
-    liveUrl: null,
-    details: "Features declarative YAML rules, provenance exploration, paired Student-t TOST equivalence testing, versioned regression gates, and standalone Netlify HTML report export."
-  },
-  {
     id: "notesx",
     title: "NotesX Reader",
     category: "web",
@@ -36,66 +23,79 @@ const projectsData = [
     description: "Static Astro web application for reading academic subject notes with seamless English and Bengali language switching, PDF integration, and Pagefind search.",
     tech: ["Astro", "TypeScript", "Markdown", "Netlify", "Pagefind", "CSS3"],
     githubUrl: "https://github.com/Abdulla4akash/notesx",
-    liveUrl: "https://github.com/Abdulla4akash/notesx",
+    liveUrl: "https://notesx.netlify.app",
     details: "Configured with netlify.toml for fast edge deployment. Uses content collections, custom chapter routing, and offline client-side full-text search indexing."
   },
   {
     id: "paperstackv3",
-    title: "Paperstack Engine (v3)",
+    title: "Paperstack Engine",
     category: "tools",
-    status: "Public Repo",
-    badgeClass: "badge-public",
+    status: "Live Netlify",
+    badgeClass: "badge-live",
     image: "assets/paperstack_preview_1784976034218.jpg",
     description: "Academic paper manager, citation tracker, and research reading workflow tool stack built for high-throughput paper cataloging.",
-    tech: ["TypeScript", "Node.js", "Citation Parser", "Markdown", "SQLite"],
+    tech: ["TypeScript", "Node.js", "Netlify", "Citation Parser", "Markdown"],
     githubUrl: "https://github.com/Abdulla4akash/paperstackv3",
-    liveUrl: null,
+    liveUrl: "https://paperstack.netlify.app",
     details: "Engineered for organizing research bibliographies, extracting reference metadata, managing reading queues, and cross-referencing citations across version iterations."
   },
   {
     id: "vocab-app",
     title: "Vocab App",
     category: "web",
-    status: "Public Repo",
-    badgeClass: "badge-public",
+    status: "Live Netlify",
+    badgeClass: "badge-live",
     image: "assets/notesx_preview_1784976016462.jpg",
     description: "Interactive vocabulary builder and flashcard application designed to accelerate word mastery and contextual usage tracking.",
-    tech: ["JavaScript", "HTML5", "CSS3", "Local Storage", "Web Audio"],
+    tech: ["JavaScript", "HTML5", "CSS3", "Netlify", "Local Storage", "Web Audio"],
     githubUrl: "https://github.com/Abdulla4akash/vocab-app",
-    liveUrl: null,
+    liveUrl: "https://vocab-app.netlify.app",
     details: "Features active recall flashcards, custom wordlists, pronunciation playback, and SRS (Spaced Repetition System) progress tracking."
+  },
+  {
+    id: "traffictwin",
+    title: "TrafficTwin Platform",
+    category: "research",
+    status: "Research Prototype",
+    badgeClass: "badge-research",
+    image: "assets/traffictwin_preview_1784975987284.jpg",
+    description: "Deterministic what-if experimentation and decision-support research platform for traffic and vehicular edge-computing (VEC) analysis.",
+    tech: ["Python 3.11+", "Streamlit", "SUMO 1.27.x", "TOST Equivalence", "Docker", "RO-Crate"],
+    githubUrl: "https://github.com/Abdulla4akash/traffictwin",
+    liveUrl: "https://github.com/Abdulla4akash/traffictwin",
+    details: "Features declarative YAML rules, provenance exploration, paired Student-t TOST equivalence testing, versioned regression gates, and standalone Netlify HTML report export."
   },
   {
     id: "f2e",
     title: "F2E Fullstack Platform",
     category: "tools",
-    status: "Private Repo",
-    badgeClass: "badge-research",
+    status: "Repository",
+    badgeClass: "badge-public",
     image: "assets/paperstack_preview_1784976034218.jpg",
     description: "Front-end to back-end engineering workspace and utility library for streamlining API contract validation and UI integration.",
     tech: ["TypeScript", "Node.js", "REST APIs", "JSON Schema"],
     githubUrl: "https://github.com/Abdulla4akash/f2e",
-    liveUrl: null,
+    liveUrl: "https://github.com/Abdulla4akash/f2e",
     details: "Provides shared schemas, interface mocks, and contract testing utilities for full-stack web application development."
   },
   {
     id: "loop",
     title: "Loop Habit & Task Tracker",
     category: "web",
-    status: "Private Repo",
-    badgeClass: "badge-research",
+    status: "Repository",
+    badgeClass: "badge-public",
     image: "assets/gcp_quiz_preview_1784976001989.jpg",
     description: "Habit loop tracker and continuous personal productivity management app with visual streaks and completion telemetry.",
     tech: ["JavaScript", "CSS3", "PWA", "Service Workers"],
     githubUrl: "https://github.com/Abdulla4akash/loop",
-    liveUrl: null,
+    liveUrl: "https://github.com/Abdulla4akash/loop",
     details: "Designed as a lightweight progressive web app for tracking daily habit loops, visual weekly heatmaps, and streak reminders."
   },
   {
     id: "soft-illusion",
     title: "Soft Illusion Mechanisms",
     category: "tools",
-    status: "Public Fork",
+    status: "Live YouTube & Code",
     badgeClass: "badge-public",
     image: "assets/traffictwin_preview_1784975987284.jpg",
     description: "Engineering and mechanical physics mechanism simulations developed for the Soft Illusion technical video channel.",
@@ -162,11 +162,9 @@ function renderProjects() {
         </div>
 
         <div class="card-footer" onclick="event.stopPropagation()">
-          ${project.liveUrl ? `
-            <a href="${project.liveUrl}" target="_blank" rel="noopener" class="btn-card btn-card-primary">
-              <i class="fa-solid fa-rocket"></i> Live Site
-            </a>
-          ` : ''}
+          <a href="${project.liveUrl}" target="_blank" rel="noopener" class="btn-card btn-card-primary">
+            <i class="fa-solid fa-rocket"></i> Live Application
+          </a>
           <a href="${project.githubUrl}" target="_blank" rel="noopener" class="btn-card btn-card-secondary">
             <i class="fa-brands fa-github"></i> Code
           </a>
@@ -202,12 +200,10 @@ function openModal(id) {
       </div>
     </div>
 
-    <div style="display: flex; gap: 14px;">
-      ${project.liveUrl ? `
-        <a href="${project.liveUrl}" target="_blank" rel="noopener" class="btn-card btn-card-primary" style="padding: 12px 24px; font-size: 1rem;">
-          <i class="fa-solid fa-rocket"></i> Open Live Application
-        </a>
-      ` : ''}
+    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+      <a href="${project.liveUrl}" target="_blank" rel="noopener" class="btn-card btn-card-primary" style="padding: 12px 24px; font-size: 1rem;">
+        <i class="fa-solid fa-rocket"></i> Open Live Application
+      </a>
       <a href="${project.githubUrl}" target="_blank" rel="noopener" class="btn-card btn-card-secondary" style="padding: 12px 24px; font-size: 1rem;">
         <i class="fa-brands fa-github"></i> View GitHub Repository
       </a>
