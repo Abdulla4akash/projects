@@ -56,13 +56,13 @@ const projectsData = [
     id: "traffictwin",
     title: "TrafficTwin Platform",
     category: "research",
-    status: "Research Prototype",
-    badgeClass: "badge-research",
+    status: "Live Netlify",
+    badgeClass: "badge-live",
     image: "assets/traffictwin_preview_1784975987284.jpg",
     description: "Deterministic what-if experimentation and decision-support research platform for traffic and vehicular edge-computing (VEC) analysis.",
     tech: ["Python 3.11+", "Streamlit", "SUMO 1.27.x", "TOST Equivalence", "Docker", "RO-Crate"],
     githubUrl: "https://github.com/Abdulla4akash/traffictwin",
-    liveUrl: "https://github.com/Abdulla4akash/traffictwin",
+    liveUrl: "https://traffictwin-research-demo.netlify.app",
     details: "Features declarative YAML rules, provenance exploration, paired Student-t TOST equivalence testing, versioned regression gates, and standalone Netlify HTML report export."
   },
   {
