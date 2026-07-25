@@ -1,0 +1,13 @@
+{
+  "name": "abdulla-projects",
+  "version": "1.0.0",
+  "description": "Showcase of projects built by Abdulla Akash",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["portfolio", "projects", "netlify", "streamlit", "astro"],
+  "author": "Abdulla Akash <abdulla4akash@gmail.com>",
+  "license": "MIT"
+}

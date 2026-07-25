@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Showcase | Abdulla Akash</title>
+  <meta name="description" content="A curated showcase of software engineering projects, research platforms, AI tools, and web applications built by Abdulla Akash (@Abdulla4akash).">
+  <meta name="theme-color" content="#0d1117">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dynamic Glow Background -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-container">
+    <nav class="navbar glass">
+      <a href="#" class="brand-logo">
+        <span class="logo-icon"><i class="fa-solid fa-code-branch"></i></span>
+        <span class="logo-text">Projects<span class="accent-dot">.</span></span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Abdulla4akash" target="_blank" rel="noopener" class="btn btn-github">
+          <i class="fa-brands fa-github"></i>
+          <span>@Abdulla4akash</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="badge-pill">
+        <span class="pulse-dot"></span>
+        <span>Portfolio Hub & Full Repository Directory</span>
+      </div>
+      <h1 class="hero-title">
+        Featured Engineering & <br>
+        <span class="gradient-text">Research Projects</span>
+      </h1>
+      <p class="hero-subtitle">
+        Explore interactive applications, machine learning exam tools, academic platforms, and research prototypes built by <strong>Abdulla Akash</strong>.
+      </p>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card glass">
+          <div class="stat-number" data-target="15">15+</div>
+          <div class="stat-label">GitHub Repositories</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-number" data-target="8">8</div>
+          <div class="stat-label">Featured Projects</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-number" data-target="2">2</div>
+          <div class="stat-label">Live Deployments</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-number" data-target="850">850+</div>
+          <div class="stat-label">ML Quiz Items</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Filter & Search Section -->
+  <main class="container main-content">
+    <div class="controls-bar glass">
+      <!-- Search Box -->
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="projectSearch" placeholder="Search projects by title, stack, or keyword..." autocomplete="off">
+        <button id="clearSearch" class="clear-btn" aria-label="Clear search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <!-- Filter Categories -->
+      <div class="filter-tabs" id="filterTabs">
+        <button class="tab-btn active" data-filter="all">All Projects</button>
+        <button class="tab-btn" data-filter="ai">AI & Machine Learning</button>
+        <button class="tab-btn" data-filter="web">Web & EdTech</button>
+        <button class="tab-btn" data-filter="research">Research & Edge</button>
+        <button class="tab-btn" data-filter="tools">Tools & Utilities</button>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Cards rendered via JS -->
+    </div>
+  </main>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card glass">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modalBody">
+        <!-- Modal content inserted via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="container footer-content glass">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <span class="logo-text">Projects<span class="accent-dot">.</span></span>
+        </div>
+        <p>Built with Vanilla HTML/CSS/JS and deployed on Netlify.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/Abdulla4akash" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+        <a href="https://gcp-pmle-quiz.streamlit.app" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> GCP PMLE Quiz Live</a>
+        <a href="https://github.com/Abdulla4akash/notesx" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> NotesX Astro App</a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 Abdulla Akash. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
