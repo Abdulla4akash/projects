@@ -49,7 +49,7 @@ const projectsData = [
     description: "Interactive vocabulary builder and flashcard application designed to accelerate word mastery and contextual usage tracking.",
     tech: ["JavaScript", "HTML5", "CSS3", "Netlify", "Local Storage", "Web Audio"],
     githubUrl: "https://github.com/Abdulla4akash/vocab-app",
-    liveUrl: "https://vocabapp.netlify.app",
+    liveUrl: "https://maxvocab.netlify.app/",
     details: "Features active recall flashcards, custom wordlists, pronunciation playback, and SRS (Spaced Repetition System) progress tracking."
   },
   {
